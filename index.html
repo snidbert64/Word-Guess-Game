@@ -3,16 +3,36 @@
     <head>
         <title>Hangman</title>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
-        <div id="game">
-            <img id="hangman">
-            <div id="message">Welcome to Hangman. Press any letter key to begin.</div>
-            <br>
-            <div id="word">oof</div>
-            <br>
-            <div id="wrong"></div>
+        <div id="main-menu" class="container">
+            <div class="jumbotron">
+                <h1>Hangman Game</h1>
+                <div id="play-button" class="row">
+                    <div class="btn btn-default">Play Game</div>
+                </div>
+                <div class="row">
+                        <div id="category-button" class="btn btn-default">Select Category: All</div>
+                </div>
+            </div>
+        </div>
+        <div id="game" class="container">
+            <div class="row">
+                <img id="hangman">
+                <div id="message">Welcome to Hangman. Press any letter key to begin.</div>
+                <br>
+                <div id="word">oof</div>
+                <br>
+                <div id="wrong"></div>
+            </div>
+            <div class="row">
+                <div id="restart-button" class="btn btn-default">Restart Game</div>
+                <div id="menu-button" class="btn btn-default">Main Menu</div>
+            </div>
         </div>
         <script src="assets/javascript/game.js"></script>
     </body>
